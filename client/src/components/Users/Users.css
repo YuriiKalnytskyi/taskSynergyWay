@@ -1,0 +1,73 @@
+.User_container{
+    width: 100%;
+    min-height: 500px;
+    text-align: center;
+}
+.User_btn {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user_btn{
+    width: 100px;
+    height: 40px;
+    border: 2px solid #6fadcb;
+    cursor: pointer;
+    margin-left: 1150px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user_container{
+    margin: 0 auto;
+}
+.user_inputClass{
+    width: 80%;
+    height: 30px;
+}
+.user_tables{
+    margin: 0 auto;
+    width: 700px;
+    height: fit-content;
+    border: 1px solid black;
+}
+.user_tables_tr{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.user_tables_id{
+    width: 50px;
+}
+.user_tables_Email{
+    width: 250px;
+
+}
+.user_tables_Group{
+    width: 200px;
+}
+.user_tables_Admin{
+    width: 100px;
+}
+.user_tables_Actions{
+    width: 100px;
+}
+.user_tables_Btn{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user_tables_btn{
+    width: 90px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid skyblue;
+}

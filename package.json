@@ -1,0 +1,22 @@
+{
+  "name": "taskSynergyWay ",
+  "version": "1.0.0",
+  "scripts": {
+    "server": "nodemon code/app.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "knex": "^0.95.11",
+    "sequelize": "^6.7.0",
+    "mysql2": "^2.3.2"
+  },
+  "devDependencies": {
+    "@types/sequelize": "^4.28.10",
+    "nodemon": "^2.0.12",
+    "concurrently": "^6.2.1"
+  }
+}
