@@ -2,16 +2,15 @@ import axios from "axios";
 
 let options = {
     baseURL: 'http://localhost:5000/',
-    // baseURL: ' https://b169-178-212-111-37.ngrok.io/api/',
 }
 let axiosInstance = axios.create(options);
 
 
 export const addUser = async (data) => {
     try {
-        console.log(data)
-        const response = await axiosInstance.post('api/user/add', data);
-        console.log(response)
+        // const response = await axiosInstance.post('api/user/add', data);
+        await axiosInstance.post('api/user/add', data);
+        // console.log(response)
         // return response.data
     } catch (e) {
         alert(JSON.stringify(e.response.data?.message, null, 2))
@@ -19,10 +18,11 @@ export const addUser = async (data) => {
 }
 export const addGroup = async (data) => {
     try {
-        console.log(data)
-        const response = await axiosInstance.post('api/group/add', data);
-        console.log(response)
-        return response.data
+        // console.log(data)
+        await axiosInstance.post('api/group/add', data);
+        // const response = await axiosInstance.post('api/group/add', data);
+        // console.log(response)
+        // return response.data
     } catch (e) {
         alert(JSON.stringify(e.response.data?.message, null, 2))
     }
@@ -56,7 +56,7 @@ export const getOneGroup = async (id) => {
 export const updateUserId = async (data) => {
     try {
         console.log(data)
-        const response = await axiosInstance.patch('api/user/updateUserId',{data});
+        const response = await axiosInstance.patch('api/user/updateUserId', { data });
         return response.data
     } catch (e) {
         alert(JSON.stringify(e.response.data?.message, null, 2))
@@ -74,7 +74,7 @@ export const deleteUserId = async (data) => {
 export const updateGroupId = async (data) => {
     try {
         console.log(data)
-        const response = await axiosInstance.patch('api/group/updateGroupId',{data});
+        const response = await axiosInstance.patch('api/group/updateGroupId', { data });
         return response.data
     } catch (e) {
         alert(JSON.stringify(e.response.data?.message, null, 2))

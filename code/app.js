@@ -19,6 +19,10 @@ app.use('/api',appRouter);
 app.use('*', _notFoundHandler);
 app.use(_handleErrors);
 
+app.listen(PORT, () => {
+    console.log(`app listen ${PORT} `);
+});
+
 sequelize.sync({alter:true}).then(()=>{
     app.listen(PORT, () => {
         console.log(`app listen ${PORT} `);
